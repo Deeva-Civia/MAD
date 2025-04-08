@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import Input from './components/input';
-import Button from './components/button';
-import Tittle from './components/tittle';
+import Input from './components/Input';
+import Button from './components/Button';
+import Tittle from './components/Tittle';
 
 const Exercise5 = () => {
   return (

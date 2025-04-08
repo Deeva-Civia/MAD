@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 import React from 'react';
 
 const Tittle = ({label, color}) => {
@@ -14,8 +14,8 @@ export default Tittle;
 const styles = StyleSheet.create({
   title: color => ({
     color: color,
-    fontSize: 35,
-    fontWeight: '800',
+    fontSize: 25,
+    fontWeight: 'bold',
     textAlign: 'left',
     marginBottom: 35,
   }),
