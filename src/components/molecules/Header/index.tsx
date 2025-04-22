@@ -1,10 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
+import {BackLogo} from '../../../assets';
 
-const Header = () => {
+const Header = ({title, displayBackButton}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Sign In</Text>
+      {displayBackButton && (
+        <TouchableOpacity style={styles.backButton}>
+          <BackLogo />
+        </TouchableOpacity>
+      )}
+      <Text style={styles.title}>{title}</Text>
     </View>
   );
 };
@@ -13,6 +19,8 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingLeft: 24,
     paddingVertical: 38,
     backgroundColor: '#FFFFFF',
@@ -20,5 +28,6 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Poppins-Medium',
     fontSize: 22,
+    marginLeft: 26,
   },
 });
