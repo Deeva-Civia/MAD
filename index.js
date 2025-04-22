@@ -14,5 +14,6 @@ import Exercise6 from './Exercise6';
 import RestAPI from './RestAPI';
 import Exercise7 from './Exercise 7';
 import SplashScreen from './src/pages/SplashScreen';
+import SignIn from './src/pages/SignIn';
 
-AppRegistry.registerComponent(appName, () => SplashScreen);
+AppRegistry.registerComponent(appName, () => SignIn);
